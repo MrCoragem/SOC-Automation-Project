@@ -1,1 +1,4 @@
-The second spet is create a thehive server
+The firt steps of configuration I enter on /etc/cassandra/cassandra.yaml and change the listen address, rpc_address and the seed_provider to my public ip of my Thehive machine.
+The second is enter on /etc/elasticsearch/elasticsearch.yml and uncomment the cluster.name and change the name to thehive, uncomment the  node.name: node-1, change the network to my public ip and put the http.port to 9200 
+to finish this step I uncomment the cluster.initial_master_nodes and remove the node-2 and let node-1
+The third step is enter on /etc/thehive/application.conf and in Database and Index configuration change to the public ip of Thehive machine and the change the application.baseURL change the localhost to the public IP
